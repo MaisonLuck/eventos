@@ -112,6 +112,44 @@ fieldset legend{
 .checkbox-wrapper label{
   margin: 0;
 }
+.menu ul{
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  position: relative;
+  left: 55rem;
+  top: 5rem;
+  
+}
+.menu ul li a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #d6d6d6;
+  font-family: 'Archivo', sans-serif;
+  border-radius: 0.2rem;
+}
+.menu ul li a:hover{
+  background-color: white;
+  color: #121214;
+  border-radius: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
   background: #f0f0f4;
   height: 136px;
