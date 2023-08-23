@@ -22,7 +22,7 @@ router.post("/criar", async (req, res) => {
     },
   });
 
-  res.send("evento criado");
+  res.status(201).json({ message: "evento criado" });
 });
 
 router.patch("/update/:id", async (req, res) => {

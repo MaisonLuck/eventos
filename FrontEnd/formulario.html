@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/formulario.css" />
+  <title>Formulário</title>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Crie e compartilhe <br />o seu evento</h1>
+      <p>O primeiro passo é prencher esse formulário de inscrição</p>
+    </header>
+    <form id="formulario">
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do Evento</legend>
+
+          <div class="input-wrapper">
+            <label>Nome do Evento <span>(mínimo 8 caracteres)</span></label>
+            <input type="text" id="nome-evento" placeholder="Digite aqui o novo do evento" minlength="8" />
+          </div>
+
+          <div class="input-wrapper">
+            <label>Modelo</label>
+            <select id="modelo">
+              <option value="">selecione um Local</option>
+              <option value="ao-vivo">Presencial</option>
+              <option value="podcast">Local</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label> Local <span></span></label>
+            <input type="text" id="evento-url" placeholder="(https://)--local" />
+          </div>
+
+          <div class="input-wrapper">
+            <label>Tipo</label>
+            <select id="tipo">
+              <option value="">selecione uma categoria</option>
+              <option value="ao-vivo">Ao Vivo</option>
+              <option value="podcast">Podcast</option>
+              <option value="mentoria">Mentoria</option>
+              <option value="rentabilidade">Rentabilidade</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label>Descrição do Evento</label>
+            <textarea id="descricao" placeholder="digite aqui mais informação"></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <button type="submit" class="button">Criar Evento</button>
+    </form>
+  </div>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="module" src="./assets/js/form.js"></script>
+</body>
+
+</html>
