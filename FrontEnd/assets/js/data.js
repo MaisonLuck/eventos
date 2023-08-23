@@ -3,6 +3,7 @@ const resultados = document.getElementById("resultado");
 function preencherTabela(data) {
   data.forEach((item) => {
     const tr = document.createElement("tr");
+
     tr.innerHTML = `<td>${item.id}</td>
     <td>${item.nome}</td>
     <td>${item.descricao}</td>
