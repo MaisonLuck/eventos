@@ -125,7 +125,7 @@ footer {
   border-top: 1px solid #d6d6d6;
   border-radius: 0 0 8px 8px;
 }
-footer .button {
+form .button {
   height: 56px;
   background: #04d361;
   border-radius: 8px;
@@ -135,6 +135,6 @@ footer .button {
   line-height: 26px;
   color: white;
 }
-footer .button:hover {
+form .button:hover {
   background: #0d783d;
 }
