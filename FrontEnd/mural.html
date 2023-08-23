@@ -6,20 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/mural.css">
 </head>
 
 <body>
-  <main class="min-h-screen flex items-center justify-center">
-    <table id="resultado" class="table">
-      <tr>
-        <th>id</th>
-        <th>nome</th>
-        <th>descricao</th>
-        <th>tipo</th>
-        <th>local</th>
-        <th>modelo</th>
-        <th>data</th>
-      </tr>
+  <main class="t min-h-screen flex items-center justify-center">
+    <table class="text-sm text-left text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr class=" border-b-black">
+          <th class="px-6 py-3 uppercase">id</th>
+          <th class="px-6 py-3 uppercase">nome</th>
+          <th class="px-6 py-3 uppercase">descricao</th>
+          <th class="px-6 py-3 uppercase">tipo</th>
+          <th class="px-6 py-3 uppercase">local</th>
+          <th class="px-6 py-3 uppercase">modelo</th>
+          <th class="px-6 py-3 uppercase">data</th>
+        </tr>
+      </thead>
+      <tbody id="resultado"></tbody>
     </table>
   </main>
 

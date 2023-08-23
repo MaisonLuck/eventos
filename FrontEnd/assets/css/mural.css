@@ -3,3 +3,12 @@
   border: 0;
   box-sizing: border-box;
 }
+
+.t {
+  background: linear-gradient(
+    -45deg,
+    rgb(118, 66, 40) 0%,
+    rgb(61, 59, 70) 35%,
+    rgb(11, 6, 39) 100%
+  );
+}
