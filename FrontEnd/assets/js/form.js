@@ -6,6 +6,7 @@ const urlEvent = document.getElementById("evento-url");
 const typeEvent = document.getElementById("tipo");
 const descriptionEvent = document.getElementById("descricao");
 const formEvent = document.getElementById("formulario");
+const date = document.getElementById("date");
 
 formEvent.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -16,7 +17,7 @@ formEvent.addEventListener("submit", (event) => {
     tipo: typeEvent.value,
     modelo: modelEvent.value,
     local: urlEvent.value,
-    data: new Date(),
+    data: date.value,
   };
   console.log("ok");
 
